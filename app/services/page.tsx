@@ -9,7 +9,7 @@ import { services } from "@/lib/data/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Oriente Travels & Tours' portfolio of services: airline ticketing, hotel reservations, visa assistance, travel consultation, tour packages, corporate travel, car rental, and vehicle sales.",
+    "Explore Oriente Travels and Tours' portfolio of services: airline ticketing, hotel reservations, visa assistance, travel consultation, tour packages, corporate travel, car rental, and vehicle sales.",
 };
 
 export default function ServicesPage() {

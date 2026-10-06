@@ -12,7 +12,10 @@ export default function Footer() {
         <div>
           <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold text-white">
             <Compass className="h-5 w-5 text-accent" aria-hidden="true" />
-            Oriente <span className="text-accent">Travels &amp; Tours</span>
+            <span className="flex flex-col leading-tight">
+              <span className="tracking-[0.2em]">ORIENTE</span>
+              <span className="text-sm font-normal text-accent">Travels and Tours</span>
+            </span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
             {companyInfo.whoWeAre.split(". ")[0]}. {companyInfo.philosophy}

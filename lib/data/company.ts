@@ -1,7 +1,9 @@
 import { TeamMember, ValueItem, Partner, ClientCategory } from "@/types";
 
 export const companyInfo = {
-  name: "Oriente Travels & Tours",
+  name: "Oriente Travels and Tours",
+  brandName: "ORIENTE",
+  brandSub: "Travels and Tours",
   founded: 2022,
   philosophy: "Listen. Simplify. Deliver.",
   tagline: "Your Journey. Our Expertise.",
@@ -10,13 +12,16 @@ export const companyInfo = {
   mission:
     "To make travel and mobility easier by providing professional, personalized, and dependable solutions that meet the unique needs of our clients while building long-lasting relationships with our customers and partners.",
   whoWeAre:
-    "Oriente Travels & Tours is a Rwanda-based travel management and tourism company established in 2022, dedicated to providing reliable, professional, and personalized solutions for individuals, businesses, organizations, and groups. From airline ticketing and hotel reservations to visa assistance, tours, corporate travel, transportation, and vehicle solutions, we are committed to making every journey simpler, smoother, and more enjoyable.",
+    "Oriente Travels and Tours is a Rwanda-based travel management and tourism company established in 2022, dedicated to providing reliable, professional, and personalized solutions for individuals, businesses, organizations, and groups. From airline ticketing and hotel reservations to visa assistance, tours, corporate travel, transportation, and vehicle solutions, we are committed to making every journey simpler, smoother, and more enjoyable.",
   journey:
     "Since our establishment in 2022, we have continued to develop our services and build relationships within the travel and tourism industry. Today, Oriente is evolving beyond traditional travel services into a broader travel, tourism, and mobility solutions company, expanding our offering to include car rental and vehicle sales.",
   contact: {
     phones: ["+250 788 611 795"],
     emails: ["travelsoriente@gmail.com", "rosine.gaby@gmail.com"],
     address: "CHIC Building, 2nd Floor, F007",
+    // WhatsApp uses the main office line (international format, digits only)
+    whatsapp: "250788611795",
+    whatsappMessage: "Hello Oriente, I would like some assistance.",
   },
 };
 

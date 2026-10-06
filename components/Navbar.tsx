@@ -13,7 +13,8 @@ const links = [
   { href: "/services", label: "Services" },
   { href: "/destinations", label: "Destinations" },
   { href: "/corporate-travel", label: "Corporate Travel" },
-  { href: "/car-rental", label: "Mobility" },
+  { href: "/car-rental", label: "Car Rental" },
+  { href: "/vehicle-sales", label: "Vehicle Sales" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -49,7 +50,7 @@ export default function Navbar() {
          <Link href="/" className="flex items-center focus-ring rounded">
           <Image
             src="/images/Oriente.png"
-            alt="Oriente Travels & Tours"
+            alt="Oriente Travels and Tours"
             width={220}
             height={67}
             priority
@@ -58,7 +59,7 @@ export default function Navbar() {
           />
         </Link>
 
-        <ul className="hidden items-center gap-7 lg:flex">
+        <ul className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
             <li key={link.href}>
               <Link

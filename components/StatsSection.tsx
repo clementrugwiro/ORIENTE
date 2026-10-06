@@ -1,7 +1,11 @@
-const stats = [
+const stats: { value: string; label: string; detail?: string }[] = [
   { value: "2022", label: "Established" },
   { value: "8+", label: "Core Services" },
-  { value: "4", label: "Destination Regions" },
+  {
+    value: "6",
+    label: "Destination Regions",
+    detail: "Rwanda • Dubai • Africa • Europe • USA • China",
+  },
   { value: "1", label: "Trusted Point of Contact" },
 ];
 
@@ -14,6 +18,9 @@ export default function StatsSection() {
             {stat.value}
           </div>
           <div className="mt-1 text-sm text-muted">{stat.label}</div>
+          {stat.detail && (
+            <div className="mt-2 text-[11px] leading-snug text-muted/80">{stat.detail}</div>
+          )}
         </div>
       ))}
     </div>

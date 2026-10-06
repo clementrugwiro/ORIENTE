@@ -103,7 +103,7 @@ export default function HomePage() {
         </Container>
       </section>
         {/* Travel inquiry */}
-      <section className="section">
+      <section id="plan" className="section scroll-mt-24">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
             <SectionHeader
@@ -172,7 +172,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="Where We Travel"
             title="Explore Our Destinations"
-            subtitle={`${companyInfo.philosophy} Explore Rwanda, Dubai, East Africa, and Europe with a trusted travel partner.`}
+            subtitle={`${companyInfo.philosophy} Explore Rwanda, Dubai, Africa, Europe, USA, and China with a trusted travel partner.`}
             align="center"
           />
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -184,10 +184,12 @@ export default function HomePage() {
       </section>
 
       <CTASection
-        title="Ready to start your journey?"
-        subtitle="Reach out today and let our team design a travel or mobility solution around your needs."
-        secondaryLabel="View Our Services"
-        secondaryHref="/services"
+        title="Your Journey Starts Here"
+        subtitle="Whether you're booking a flight, planning a holiday, renting a vehicle or looking for your next car, Oriente Travels and Tours is here to make every journey simple, seamless and memorable."
+        primaryLabel="Plan Your Journey"
+        primaryHref="/#plan"
+        secondaryLabel="Contact Oriente"
+        secondaryHref="/contact"
       />
     </>
   );

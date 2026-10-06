@@ -11,7 +11,7 @@ import { companyInfo, values, whyOriente, team } from "@/lib/data/company";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Oriente Travels & Tours: our journey since 2022, our mission and vision, our values, and the team behind the journey.",
+    "Learn about Oriente Travels and Tours: our journey since 2022, our mission and vision, our values, and the team behind the journey.",
 };
 
 export default function AboutPage() {

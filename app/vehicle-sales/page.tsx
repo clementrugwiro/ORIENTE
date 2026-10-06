@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/Container";
 import Hero from "@/components/Hero";
 import SectionHeader from "@/components/SectionHeader";
 import CTASection from "@/components/CTASection";
-import VehicleInquiryForm from "@/components/forms/VehicleInquiryForm";
+import VehicleSalesExplorer from "@/components/VehicleSalesExplorer";
 import { vehicleSalesProcess } from "@/lib/data/company";
 
 export const metadata: Metadata = {
   title: "Vehicle Sales",
   description:
-    "Oriente Travels & Tours helps clients identify suitable vehicles for personal or professional use, connecting them with the right options for their requirements.",
+    "Discover a diverse selection of quality vehicles for personal, family and business needs. Choose from Petrol, Diesel, Hybrid and Electric vehicles, with professional assistance throughout your purchase journey.",
 };
 
 export default function VehicleSalesPage() {
@@ -18,12 +19,21 @@ export default function VehicleSalesPage() {
     <>
       <Hero
         eyebrow="Mobility · Vehicle Sales"
-        title="Find the Right Vehicle"
-        subtitle="As part of our expanding mobility services, we help clients identify suitable vehicles for personal or professional use."
+        title="Find Your Next Vehicle with Oriente"
+        subtitle="Discover a diverse selection of quality vehicles for personal, family and business needs. Choose from Petrol, Diesel, Hybrid and Electric vehicles, with professional assistance throughout your purchase journey."
         backgroundImage="/images/car-sales.png"
         imageAlt="Scenic travel destination"
         size="sm"
-      />
+      >
+        <Link href="#categories" className="btn-primary">
+          Explore Vehicles <ArrowRight className="h-4 w-4" aria-hidden="true" />
+        </Link>
+        <Link href="#request" className="btn-outline">
+          Request a Vehicle
+        </Link>
+      </Hero>
+
+      <VehicleSalesExplorer />
 
       <section className="section">
         <Container>
@@ -51,28 +61,11 @@ export default function VehicleSalesPage() {
         </Container>
       </section>
 
-      <section className="section bg-white">
-        <Container>
-          <p className="mx-auto max-w-2xl text-center text-muted">
-            Our vehicle sales service is designed for individuals, businesses, organizations,
-            and other clients seeking suitable vehicles for personal or professional use.
-            Vehicle inventory will be available here in a future phase — for now, our team can
-            guide you personally through available options.
-          </p>
-        </Container>
-      </section>
-
-      <section className="section">
-        <Container className="mx-auto max-w-xl">
-          <div className="card">
-            <VehicleInquiryForm />
-          </div>
-        </Container>
-      </section>
-
       <CTASection
         title="Looking for a specific vehicle?"
         subtitle="Tell us your requirements and our team will help connect you with a suitable option."
+        primaryLabel="Request a Vehicle"
+        primaryHref="#request"
       />
     </>
   );

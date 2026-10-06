@@ -9,7 +9,7 @@ import { destinations } from "@/lib/data/destinations";
 export const metadata: Metadata = {
   title: "Destinations",
   description:
-    "Explore destinations with Oriente Travels & Tours: Rwanda, Dubai, East Africa, and Europe.",
+    "Explore destinations with Oriente Travels and Tours: Rwanda, Dubai, Africa, Europe, USA, and China.",
 };
 
 export default function DestinationsPage() {

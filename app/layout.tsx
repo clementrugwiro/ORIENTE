@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,8 +19,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Oriente Travels & Tours | Travel, Tourism & Mobility Solutions",
-    template: "%s | Oriente Travels & Tours",
+    default: "Oriente Travels and Tours | Travel, Tourism & Mobility Solutions",
+    template: "%s | Oriente Travels and Tours",
   },
   description:
     "Professional, personalized and dependable travel, tourism and mobility solutions from Rwanda to the world.",
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
   ],
   metadataBase: new URL("https://www.orientetravels.example"),
   openGraph: {
-    title: "Oriente Travels & Tours | Travel, Tourism & Mobility Solutions",
+    title: "Oriente Travels and Tours | Travel, Tourism & Mobility Solutions",
     description:
       "Professional, personalized and dependable travel, tourism and mobility solutions from Rwanda to the world.",
     type: "website",
@@ -52,6 +53,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
