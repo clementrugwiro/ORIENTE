@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Compass, Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 import { companyInfo } from "@/lib/data/company";
 import { services } from "@/lib/data/services";
 
@@ -10,13 +11,17 @@ export default function Footer() {
     <footer className="bg-primary-dark text-white/80">
       <div className="container-oriente grid grid-cols-1 gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
-          <Link href="/" className="flex items-center gap-2 font-display text-lg font-semibold text-white">
-            <Compass className="h-5 w-5 text-accent" aria-hidden="true" />
-            <span className="flex flex-col leading-tight">
-              <span className="tracking-[0.2em]">ORIENTE</span>
-              <span className="text-sm font-normal text-accent">Travels and Tours</span>
-            </span>
-          </Link>
+          <Link href="/" className="flex items-center focus-ring rounded">
+          <Image
+            src="/images/Oriente.png"
+            alt="Oriente Travels and Tours"
+            width={220}
+            height={67}
+            priority
+            quality={100}
+            className="h-14 w-auto"
+          />
+        </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
             {companyInfo.whoWeAre.split(". ")[0]}. {companyInfo.philosophy}
           </p>
