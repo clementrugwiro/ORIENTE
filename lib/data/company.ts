@@ -45,12 +45,13 @@ export const whyOriente: ValueItem[] = [
 ];
 
 export const team: TeamMember[] = [
-  { name: "Rosine Umubyeyi", role: "Chief Executive Officer", image: "/images/team/Rosine.JPG" },
+  { name: "Rosine Umubyeyi", role: "Chief Executive Officer", image: "/images/team/Rosine.jpeg" },
   { name: "Parfait Rwabuhungu", role: "Chief Operation Officer", image: "/images/team/Parfait.png" },
   { name: "Lea Umutoni", role: "Sales/Airticketing Officer", image: "/images/team/Lea.jpeg" }, 
   { name: "Jean Yves Nshimiye Rugira", role: "Tour/Marketing Officer", image: "/images/team/rugira.jpeg" },
   { name: "Tresor Simbi", role: "Car Rental/Sale Officer", image: "/images/team/Tresor.jpeg" },
   { name: "Phoibe Rwibutso", role: "Accountant", image: "/images/team/Phoibe.jpeg" },
+  { name: "Ketia Teta", role: "Customer Service Officer", image: "/images/team/Ketia.jpeg" },
 ];
 
 export const clientCategories: ClientCategory[] = [

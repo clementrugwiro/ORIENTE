@@ -83,11 +83,16 @@ export default function AboutPage() {
             subtitle="Behind every successful journey is a team that understands the importance of preparation, coordination, and attention to detail."
             align="center"
           />
-          <div className="mt-12 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-6">
-            {team.map((member) => (
-              <TeamCard key={member.name} member={member} />
-            ))}
-          </div>
+        <div className="mt-12 flex flex-wrap justify-center gap-5">
+  {team.map((member) => (
+    <div
+      key={member.name}
+      className="w-[calc((100%_-_1.25rem)/2)] sm:w-[calc((100%_-_2.5rem)/3)] lg:w-[calc((100%_-_3.75rem)/4)]"
+    >
+      <TeamCard member={member} />
+    </div>
+  ))}
+</div>
         </Container>
       </section>
 

@@ -143,11 +143,13 @@ export default function HomePage() {
       </section>
 
       {/* Rwanda section */}
-      <section className="section bg-white">
+      <section className="section bg-white bg-gradient-to-br from-surface via-white to-surface">
         <Container className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <div className="order-2 grid grid-cols-2 gap-4 lg:order-1">
             {rwanda.places?.slice(0, 4).map((place) => (
-              <div key={place.name} className="rounded-xl bg-surface p-4 shadow-card">
+               <div
+          key={place.name}
+          className="group rounded-xl border-t-4 border-accent bg-white p-4 shadow-card transition-all duration-200 hover:-translate-y-1 hover:shadow-cardHover">
                 <p className="font-display text-sm font-semibold text-primary">{place.name}</p>
                 <p className="mt-1 text-xs text-muted">{place.description}</p>
               </div>
@@ -159,7 +161,7 @@ export default function HomePage() {
             <p className="section-subtitle">
               Experience the Land of a Thousand Hills — {rwanda.description.toLowerCase()}
             </p>
-            <Link href={`/destinations/${rwanda.slug}`} className="btn-secondary mt-6 inline-flex">
+            <Link href={`/destinations/${rwanda.slug}`} className="btn-primary mt-6 inline-flex">
               Explore Rwanda <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
