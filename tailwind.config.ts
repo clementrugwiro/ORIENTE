@@ -34,12 +34,17 @@ const config: Config = {
         cardHover: "0 12px 32px rgba(11, 37, 69, 0.14)",
       },
       keyframes: {
+        marquee: {
+    "0%": { transform: "translateX(0)" },
+    "100%": { transform: "translateX(-50%)" },
+  },
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
       animation: {
+        marquee: "marquee 40s linear infinite",
         fadeUp: "fadeUp 0.6s ease-out forwards",
       },
     },

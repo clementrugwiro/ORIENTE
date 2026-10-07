@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/Container";
+import BrandSlideshow from "@/components/BrandSlideshow";
 import Hero from "@/components/Hero";
 import SectionHeader from "@/components/SectionHeader";
 import CTASection from "@/components/CTASection";
@@ -33,7 +34,7 @@ export default function VehicleSalesPage() {
         </Link>
       </Hero>
 
-      <VehicleSalesExplorer />
+      <VehicleSalesExplorer brandsSlot={<BrandSlideshow />} />
 
       <section className="section">
         <Container>

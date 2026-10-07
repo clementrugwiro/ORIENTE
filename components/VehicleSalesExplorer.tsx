@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import Container from "@/components/Container";
 import VehicleSalesForm from "@/components/forms/VehicleSalesForm";
 import { fuelTypes, type FuelType } from "@/lib/data/vehicles";
 import { cn } from "@/lib/utils/cn";
 
 /** Fuel category cards + request form. Choosing a card pre-selects the fuel type in the form. */
-export default function VehicleSalesExplorer() {
+export default function VehicleSalesExplorer({ brandsSlot }: { brandsSlot?: ReactNode }) {
   const [fuelType, setFuelType] = useState<FuelType | "">("");
 
   function choose(name: FuelType) {
@@ -42,8 +42,8 @@ export default function VehicleSalesExplorer() {
           </div>
         </Container>
       </section>
-      
 
+     {brandsSlot}
       <section id="request" className="section scroll-mt-24 bg-white">
         <Container className="mx-auto max-w-xl">
           <div className="card">
