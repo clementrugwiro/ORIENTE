@@ -42,6 +42,7 @@ export default function VehicleSalesExplorer() {
           </div>
         </Container>
       </section>
+      
 
       <section id="request" className="section scroll-mt-24 bg-white">
         <Container className="mx-auto max-w-xl">
