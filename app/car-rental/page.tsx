@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Car, CheckCircle2, ArrowRight } from "lucide-react";
 import Container from "@/components/Container";
+import BrandSlideshow from "@/components/BrandSlideshow";
 import Hero from "@/components/Hero";
 import SectionHeader from "@/components/SectionHeader";
 import CTASection from "@/components/CTASection";
-import BrandSlideshow from "@/components/BrandSlideshow";
-import VehicleSalesExplorer from "@/components/VehicleSalesExplorer";
 import VehicleInquiryForm from "@/components/forms/VehicleInquiryForm";
 import { carRentalSolutions } from "@/lib/data/company";
 
@@ -27,7 +26,6 @@ export default function CarRentalPage() {
         imageAlt="Scenic travel destination"
         size="sm"
       />
-       <VehicleSalesExplorer brandsSlot={<BrandSlideshow />} />
 
       <section className="section">
         <Container>
@@ -45,22 +43,11 @@ export default function CarRentalPage() {
           </div>
         </Container>
       </section>
-
-      <section className="section bg-primary text-white">
-        <Container className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
-          <div>
-            <h2 className="font-display text-2xl font-semibold md:text-3xl">
-              Looking to buy a vehicle instead?
-            </h2>
-            <p className="mt-2 max-w-lg text-white/70">
-              Our Vehicle Sales service helps clients identify and connect with suitable vehicle options.
-            </p>
-          </div>
-          <Link href="/vehicle-sales" className="btn-primary shrink-0">
-            Explore Vehicle Sales <ArrowRight className="h-4 w-4" aria-hidden="true" />
-          </Link>
-        </Container>
-      </section>
+          <BrandSlideshow
+        eyebrow="Our Fleet"
+        title="Quality Vehicles From Leading Brands"
+        subtitle="Choose from reliable vehicles for trips, business and everyday travel."
+      />
 
       <section className="section">
         <Container className="grid gap-12 lg:grid-cols-2">

@@ -27,7 +27,15 @@ function getBrandFiles(): string[] {
  * Auto-scrolling strip of brand logos. Reads every image in
  * public/images/carbrands at build time, so adding a logo = dropping a file in the folder.
  */
-export default function BrandSlideshow() {
+export default function BrandSlideshow({
+  eyebrow = "Brands",
+  title = "Brands You Can Trust",
+  subtitle = "From everyday family cars to business fleets, we help you find vehicles from leading manufacturers.",
+}: {
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+}) {
   const files = getBrandFiles();
   if (files.length === 0) return null;
 
@@ -39,22 +47,22 @@ export default function BrandSlideshow() {
     <section aria-label="Vehicle brands we work with" className="section bg-gradient-to-b from-surface to-white">
       <Container>
         <div className="mx-auto max-w-2xl text-center">
-          <span className="section-eyebrow">Brands</span>
-          <h2 className="section-title">Brands You Can Trust</h2>
+          <span className="section-eyebrow">{eyebrow}</span>
+          <h2 className="section-title">{title}</h2>
           <p className="section-subtitle">
-            From everyday family cars to business fleets, we help you find vehicles from leading manufacturers.
+            {subtitle}
           </p>
         </div>
       </Container>
 
-      <div className="group relative mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+      <div className="group relative mt-10 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_98%,transparent)]">
         <ul className="flex w-max animate-marquee gap-6 group-hover:[animation-play-state:paused]">
           {[0, 1].map((copy) =>
             track.map((file, i) => (
               <li
                 key={`${copy}-${i}`}
                 aria-hidden={copy === 1}
-                className="flex h-24 w-40 shrink-0 items-center justify-center rounded-xl border-t-4 border-accent bg-white p-4 shadow-card"
+                className="flex h-24 w-40 shrink-0 items-center justify-center rounded-xl border-t-4 border-accent bg-white p-4 shadow-md"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
