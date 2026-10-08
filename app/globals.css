@@ -59,7 +59,11 @@ body {
   @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
 }
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee {
+   .animate-marquee,
+  .animate-kenburns {
     animation: none;
+  }
+  .hero-plane {
+    display: none;
   }
 }

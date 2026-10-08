@@ -5,6 +5,8 @@ import Container from "@/components/Container";
 import Hero from "@/components/Hero";
 import SectionHeader from "@/components/SectionHeader";
 import CTASection from "@/components/CTASection";
+import BrandSlideshow from "@/components/BrandSlideshow";
+import VehicleSalesExplorer from "@/components/VehicleSalesExplorer";
 import VehicleInquiryForm from "@/components/forms/VehicleInquiryForm";
 import { carRentalSolutions } from "@/lib/data/company";
 
@@ -25,6 +27,7 @@ export default function CarRentalPage() {
         imageAlt="Scenic travel destination"
         size="sm"
       />
+       <VehicleSalesExplorer brandsSlot={<BrandSlideshow />} />
 
       <section className="section">
         <Container>

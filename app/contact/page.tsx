@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import Container from "@/components/Container";
 import Hero from "@/components/Hero";
 import ContactForm from "@/components/forms/ContactForm";
+import SocialLinks from "@/components/SocialLinks";
 import { companyInfo } from "@/lib/data/company";
 import { whatsappLink } from "@/components/WhatsAppButton";
 
@@ -72,12 +73,13 @@ export default function ContactPage() {
       <section className="section">
         <Container className="grid gap-12 lg:grid-cols-5">
           <div className="lg:col-span-2 space-y-6">
-            <div className="card">
-              <MapPin className="h-5 w-5 text-accent-dark" aria-hidden="true" />
-              <h3 className="mt-4 font-display text-base font-semibold text-primary">Office</h3>
-              <p className="mt-2 text-sm text-muted">{companyInfo.contact.address}</p>
-            </div>
-          </div>
+  <div className="card">
+    <MapPin className="h-5 w-5 text-accent-dark" aria-hidden="true" />
+    <h3 className="mt-4 font-display text-base font-semibold text-primary">Office</h3>
+    <p className="mt-2 text-sm text-muted">{companyInfo.contact.address}</p>
+    <SocialLinks variant="light" />
+  </div>
+</div>
 
           <div className="card lg:col-span-3">
             <ContactForm />

@@ -14,7 +14,7 @@ const links = [
   { href: "/destinations", label: "Destinations" },
   { href: "/corporate-travel", label: "Corporate Travel" },
   { href: "/car-rental", label: "Car Rental" },
-  { href: "/vehicle-sales", label: "Vehicle Sales" },
+  { href: "/vehicle-sales", label: "Car Sales" },
   { href: "/contact", label: "Contact" },
 ];
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Compass, Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
+import SocialLinks from "@/components/SocialLinks";
 import { companyInfo } from "@/lib/data/company";
 import { services } from "@/lib/data/services";
 
@@ -73,17 +74,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <div className="mt-4 flex gap-3" aria-label="Social media placeholders">
-            {["Facebook", "Instagram", "LinkedIn"].map((label) => (
-              <span
-                key={label}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-xs text-white/50"
-                title={`${label} (coming soon)`}
-              >
-                {label[0]}
-              </span>
-            ))}
-          </div>
+          <SocialLinks />
         </div>
       </div>
 

@@ -34,6 +34,16 @@ const config: Config = {
         cardHover: "0 12px 32px rgba(11, 37, 69, 0.14)",
       },
       keyframes: {
+         kenburns: {
+    "0%": { transform: "scale(1)" },
+    "100%": { transform: "scale(1.12)" },
+  },
+  flyAcross: {
+    "0%": { transform: "translate(-15vw, 0)", opacity: "0" },
+    "10%": { opacity: "1" },
+    "85%": { opacity: "1" },
+    "100%": { transform: "translate(105vw, -40vh)", opacity: "0" },
+  },
         marquee: {
     "0%": { transform: "translateX(0)" },
     "100%": { transform: "translateX(-50%)" },
@@ -46,6 +56,8 @@ const config: Config = {
       animation: {
         marquee: "marquee 40s linear infinite",
         fadeUp: "fadeUp 0.6s ease-out forwards",
+        kenburns: "kenburns 6s ease-in infinite alternate",
+        flyAcross: "flyAcross 4s ease-in-out 0.3s 1 forwards",
       },
     },
   },

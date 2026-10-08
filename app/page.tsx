@@ -34,6 +34,7 @@ export default function HomePage() {
         subtitle="Professional, personalized and dependable travel, tourism and mobility solutions from Rwanda to the world."
         backgroundImage="/images/airplane-taking-off-sunset.jpg"
         imageAlt="Scenic travel destination"
+        animated
       >
         <Link href="/contact" className="btn-primary">
           Plan Your Journey <ArrowRight className="h-4 w-4" aria-hidden="true" />

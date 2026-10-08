@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils/cn";
+import { Plane } from "lucide-react";
 
 export default function Hero({
   eyebrow,
@@ -11,6 +12,7 @@ export default function Hero({
   backgroundImage,
   imageAlt = "",
   overlay = "dark",
+  animated = false,
 }: {
   eyebrow?: string;
   title: string;
@@ -24,6 +26,7 @@ export default function Hero({
   imageAlt?: string;
   /** How dark the overlay over the image is, for text legibility. */
   overlay?: "dark" | "darker" | "none";
+  animated?: boolean;
 }) {
   return (
     <section
@@ -41,7 +44,7 @@ export default function Hero({
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+              className={cn("object-cover", animated && "animate-kenburns")} 
           />
           {overlay !== "none" && (
             <div
@@ -72,6 +75,15 @@ export default function Hero({
             "repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, transparent 1px, transparent 14px)",
         }}
       />
+      {animated && (
+  <div
+    aria-hidden="true"
+    className="hero-plane pointer-events-none absolute bottom-6 left-0 z-10 animate-flyAcross opacity-0"
+  >
+    <span className="absolute right-1/2 top-1/2 h-0.5 w-40 origin-right -rotate-45 bg-gradient-to-l from-white/70 to-transparent" />
+    <Plane className="relative h-10 w-10 fill-white text-white drop-shadow-lg md:h-14 md:w-14" />
+  </div>
+)}
       <div className="container-oriente relative">
         {eyebrow && (
           <span className="section-eyebrow text-accent-light">{eyebrow}</span>
