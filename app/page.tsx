@@ -30,8 +30,8 @@ export default function HomePage() {
     <>
       <Hero
         eyebrow="Rwanda → The World"
-        title="Your Journey. Our Expertise."
-        subtitle="Professional, personalized and dependable travel, tourism and mobility solutions from Rwanda to the world."
+        title="Travel, Tourism & Mobility Solutions"
+        subtitle="Your Journey. Our Expertise. Professional, personalized and dependable travel, tourism and mobility solutions from Rwanda to the world."
         backgroundImage="/images/airplane-taking-off-sunset.jpg"
         imageAlt="Scenic travel destination"
         animated

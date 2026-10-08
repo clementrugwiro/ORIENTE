@@ -10,9 +10,9 @@ import VehicleSalesExplorer from "@/components/VehicleSalesExplorer";
 import { vehicleSalesProcess } from "@/lib/data/company";
 
 export const metadata: Metadata = {
-  title: "Vehicle Sales",
+  title: "Vehicle Sales in Rwanda",
   description:
-    "Discover a diverse selection of quality vehicles for personal, family and business needs. Choose from Petrol, Diesel, Hybrid and Electric vehicles, with professional assistance throughout your purchase journey.",
+  "Explore vehicles for sale in Rwanda with Oriente Travels. Find suitable vehicles for personal, family and business needs with professional assistance throughout the selection process.",
 };
 
 export default function VehicleSalesPage() {

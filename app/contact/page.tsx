@@ -8,9 +8,9 @@ import { companyInfo } from "@/lib/data/company";
 import { whatsappLink } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Contact Us",
+  title: "Contact Oriente Travels in Kigali",
   description:
-    "Get in touch with Oriente Travels and Tours. Call, email, or visit us at CHIC Building, 2nd Floor, F007.",
+    "Contact Oriente Travels and Tours in Kigali, Rwanda for travel bookings, tours, corporate travel, car rental, vehicle sales and personalized travel assistance.",
 };
 
 export default function ContactPage() {

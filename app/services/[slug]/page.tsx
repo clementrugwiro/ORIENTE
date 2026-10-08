@@ -22,8 +22,11 @@ export function generateMetadata({
   const service = getServiceBySlug(params.slug);
   if (!service) return {};
   return {
-    title: service.name,
-    description: service.shortDescription,
+   title: `${service.name} in Rwanda`,
+  description: `${service.description} Oriente Travels provides ${service.name.toLowerCase()} services for individuals, families, groups and businesses in Rwanda.`,
+  alternates: {
+    canonical: `https://orientetravels.co.rw/services/${service.slug}`,
+  },
   };
 }
 

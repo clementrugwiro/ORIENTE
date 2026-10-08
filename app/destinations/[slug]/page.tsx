@@ -19,9 +19,13 @@ export function generateMetadata({
   const destination = getDestinationBySlug(params.slug);
   if (!destination) return {};
   return {
-    title: destination.name,
-    description: destination.description,
-  };
+  title: `${destination.name} Travel Packages`,
+  description:
+    `Explore ${destination.name} with Oriente Travels. Discover destinations, experiences, travel packages and personalized journey planning from Rwanda.`,
+  alternates: {
+    canonical: `https://orientetravels.co.rw/destinations/${destination.slug}`,
+  },
+};
 }
 
 export default function DestinationDetailPage({

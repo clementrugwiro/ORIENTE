@@ -9,10 +9,11 @@ import CTASection from "@/components/CTASection";
 import { companyInfo, values, whyOriente, team } from "@/lib/data/company";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Oriente Travels | Travel Company in Rwanda",
   description:
-    "Learn about Oriente Travels and Tours: our journey since 2022, our mission and vision, our values, and the team behind the journey.",
+    "Learn about Oriente Travels and Tours, a Rwanda-based travel, tourism and mobility solutions company established in 2022.",
 };
+
 
 export default function AboutPage() {
   return (

@@ -8,9 +8,9 @@ import CorporateInquiryForm from "@/components/forms/CorporateInquiryForm";
 import { corporateProcess } from "@/lib/data/company";
 
 export const metadata: Metadata = {
-  title: "Corporate Travel",
+  title: "Corporate Travel Management in Rwanda",
   description:
-    "Travel management solutions designed around your business — coordination, efficiency, flexibility, cost awareness, and reliable support.",
+  "Corporate travel management in Rwanda for companies, executives and teams, including flight bookings, hotels, visa assistance, airport transfers, itineraries and dedicated travel support.",
 };
 
 const support = [

@@ -7,9 +7,9 @@ import CTASection from "@/components/CTASection";
 import { services } from "@/lib/data/services";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Travel Services in Rwanda",
   description:
-    "Explore Oriente Travels and Tours' portfolio of services: airline ticketing, hotel reservations, visa assistance, travel consultation, tour packages, corporate travel, car rental, and vehicle sales.",
+    "Explore Oriente Travels' travel services in Rwanda, including airline ticketing, hotel reservations, visa assistance, tour packages, corporate travel, car rental and vehicle solutions.",
 };
 
 export default function ServicesPage() {

@@ -7,9 +7,9 @@ import CTASection from "@/components/CTASection";
 import { destinations } from "@/lib/data/destinations";
 
 export const metadata: Metadata = {
-  title: "Destinations",
+  title: "Travel Destinations",
   description:
-    "Explore destinations with Oriente Travels and Tours: Rwanda, Dubai, Africa, Europe, USA, and China.",
+  "Explore travel destinations with Oriente Travels from Rwanda, including Rwanda, Dubai, East Africa, Europe, USA, and China.",
 };
 
 export default function DestinationsPage() {

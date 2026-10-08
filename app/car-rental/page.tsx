@@ -10,9 +10,9 @@ import VehicleInquiryForm from "@/components/forms/VehicleInquiryForm";
 import { carRentalSolutions } from "@/lib/data/company";
 
 export const metadata: Metadata = {
-  title: "Car Rental",
+  title: "Car Rental in Rwanda",
   description:
-    "Convenient vehicle solutions for travelers, businesses, organizations, and individuals — short-term rental, longer-term rental, corporate vehicle solutions, airport transport, and chauffeur services.",
+  "Car rental in Rwanda for travelers, businesses and organizations, including short-term and long-term rentals, corporate vehicles, airport transfers and chauffeur services.",
 };
 
 export default function CarRentalPage() {
