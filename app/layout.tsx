@@ -19,67 +19,68 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://orientetravels.co.rw"),
+metadataBase: new URL("https://www.orientetravels.co.rw"),
 
-  title: {
-    default:
-      "Oriente Travels | Travel Agency, Tours & Car Rental in Rwanda",
-    template: "%s | Oriente Travels",
-  },
+title: {
+default:
+"Oriente Travels | Travel Agency, Tours & Car Rental in Rwanda",
+template: "%s | Oriente Travels",
+},
 
-  description:
-    "Oriente Travels and Tours is a Rwanda-based travel company providing airline ticketing, hotel reservations, visa assistance, tours, corporate travel, car rental and vehicle solutions.",
+description:
+"Oriente Travels and Tours is a Rwanda-based travel company providing airline ticketing, hotel reservations, visa assistance, tours, corporate travel, car rental and vehicle solutions.",
 
-  keywords: [
-    "Oriente Travels",
-    "travel agency Rwanda",
-    "travel agency Kigali",
-    "Rwanda travel agency",
-    "Rwanda tours",
-    "Dubai tours from Rwanda",
-    "corporate travel Rwanda",
-    "car rental Rwanda",
-    "vehicle sales Rwanda",
-    "travel services Kigali",
-  ],
+keywords: [
+"Oriente Travels",
+"travel agency Rwanda",
+"travel agency Kigali",
+"Rwanda travel agency",
+"Rwanda tours",
+"Dubai tours from Rwanda",
+"corporate travel Rwanda",
+"car rental Rwanda",
+"vehicle sales Rwanda",
+"travel services Kigali",
+],
 
-  alternates: {
-    canonical: "https://orientetravels.co.rw",
-  },
+alternates: {
+canonical: "/",
+},
 
-  openGraph: {
-    title:
-      "Oriente Travels | Travel Agency, Tours & Car Rental in Rwanda",
-    description:
-      "Professional travel, tourism and mobility solutions from Rwanda to the world.",
-    url: "https://orientetravels.co.rw",
-    siteName: "Oriente Travels",
-    type: "website",
-    locale: "en_RW",
-    images: [
-      {
-        url: "/images/airplane-taking-off-sunset.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Oriente Travels and Tours",
-      },
-    ],
-  },
+openGraph: {
+title:
+"Oriente Travels | Travel Agency, Tours & Car Rental in Rwanda",
+description:
+"Professional travel, tourism and mobility solutions from Rwanda to the world.",
+url: "https://www.orientetravels.co.rw/",
+siteName: "Oriente Travels",
+type: "website",
+locale: "en_RW",
+images: [
+{
+url: "/images/airplane-taking-off-sunset.jpg",
+width: 1200,
+height: 630,
+alt: "Oriente Travels and Tours",
+},
+],
+},
 
-  twitter: {
-    card: "summary_large_image",
-    title:
-      "Oriente Travels | Travel Agency, Tours & Car Rental in Rwanda",
-    description:
-      "Professional travel, tourism and mobility solutions from Rwanda to the world.",
-    images: ["/images/airplane-taking-off-sunset.jpg"],
-  },
+twitter: {
+card: "summary_large_image",
+title:
+"Oriente Travels | Travel Agency, Tours & Car Rental in Rwanda",
+description:
+"Professional travel, tourism and mobility solutions from Rwanda to the world.",
+images: ["/images/airplane-taking-off-sunset.jpg"],
+},
 
-  robots: {
-    index: true,
-    follow: true,
-  },
+robots: {
+index: true,
+follow: true,
+},
 };
+
 
 export default function RootLayout({
   children,
