@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin", "/account"],
     },
-    sitemap: "https://orientetravels.co.rw/sitemap.xml",
+    sitemap: "https://www.orientetravels.co.rw/sitemap.xml",
   };
 }
